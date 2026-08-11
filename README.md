@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Joshua Ndeule — Portfolio
+
+Personal portfolio site for Joshua Ndeule, a software engineer and full-stack developer based in Lilongwe, Malawi, with a focus on network & cybersecurity fundamentals. Built with Next.js, React, and Tailwind CSS, featuring an interactive 3D particle background powered by Three.js.
+
+## Sections
+
+- **Hero** — animated role intro (React Type Animation) and particle background
+- **About** — background and focus areas
+- **Skills** — languages, frontend, backend & databases, networking & security, tools
+- **Experience** — work history
+- **Education** — academic background
+- **Projects** — featured full-stack, 3D, and network topology projects
+- **Certifications** — Cisco Networking Academy and Microsoft/LinkedIn credentials
+- **Contact** — contact form backed by an API route
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org) 16 (App Router)
+- [React](https://react.dev) 19
+- [Tailwind CSS](https://tailwindcss.com) 4
+- [Framer Motion](https://www.framer.com/motion/) for animations
+- [Three.js](https://threejs.org) + [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber) / [drei](https://github.com/pmndrs/drei) for the 3D background
+- [Lucide React](https://lucide.dev) for icons
+- TypeScript
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+  app/
+    api/contact/route.ts   # contact form endpoint
+    layout.tsx
+    page.tsx
+  components/               # section components (Hero, About, Skills, etc.)
+  data/content.ts           # all portfolio content (profile, skills, projects, etc.)
+```
 
-## Learn More
+Site content (profile info, skills, experience, education, projects, and certifications) is centralized in [src/data/content.ts](src/data/content.ts) — update that file to change what's displayed without touching component code.
 
-To learn more about Next.js, take a look at the following resources:
+## Available Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run dev     # start the development server
+npm run build   # build for production
+npm run start   # run the production build
+npm run lint    # run ESLint
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The easiest way to deploy this app is with the [Vercel Platform](https://vercel.com/new). See the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for other options.
