@@ -8,7 +8,18 @@
       "Bash(pkill -f \"next dev\")",
       "Bash(ps -p 95466 -o pid,cmd)",
       "WebSearch",
-      "Bash(npm install *)"
+      "Bash(npm install *)",
+      "Bash(chromium-cli --help)",
+      "Bash(node -e \"console.log\\(require.resolve\\('playwright'\\)\\)\")",
+      "Bash(npx --no-install playwright --version)",
+      "Bash(npx --yes playwright@1.62.1 install chromium --with-deps)",
+      "Bash(node mobile-nav-test.mjs)",
+      "Bash(npm init *)",
+      "Bash(npx playwright *)",
+      "Bash(node mobile-nav-debug.mjs)",
+      "Bash(node mobile-nav-debug2.mjs)",
+      "Bash(node mobile-nav-debug3.mjs)",
+      "Bash(node mobile-nav-debug4.mjs)"
     ]
   }
 }

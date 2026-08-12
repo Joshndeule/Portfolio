@@ -1,4 +1,17 @@
-{"timestamp":"00:00:00.790","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:07.068","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:00:07.536","source":"Browser","level":"WARN","message":"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."}
-{"timestamp":"00:00:07.652","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\\u001b[39m\""}
+{"timestamp":"00:00:03.806","source":"Server","level":"WARN","message":"⚠ Slow filesystem detected. The benchmark took 466ms. If /home/infi-teck/Documents/New1/Portifolio/Portfolio/.next/dev is a network drive, consider moving it to a local folder.\nSee more: https://nextjs.org/docs/app/guides/local-development"}
+{"timestamp":"00:00:05.246","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:08.278","source":"Server","level":"LOG","message":"○ Compiling / ..."}
+{"timestamp":"00:01:23.567","source":"Browser","level":"WARN","message":"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."}
+{"timestamp":"00:01:27.921","source":"Server","level":"WARN","message":"[browser] \"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\""}
+{"timestamp":"00:02:17.442","source":"Browser","level":"WARN","message":"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."}
+{"timestamp":"00:02:17.447","source":"Server","level":"WARN","message":"[browser] \"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\""}
+{"timestamp":"00:03:40.299","source":"Browser","level":"WARN","message":"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."}
+{"timestamp":"00:03:40.300","source":"Server","level":"WARN","message":"[browser] \"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\""}
+{"timestamp":"00:03:44.661","source":"Browser","level":"WARN","message":"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."}
+{"timestamp":"00:03:44.662","source":"Server","level":"WARN","message":"[browser] \"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\""}
+{"timestamp":"00:04:25.639","source":"Browser","level":"WARN","message":"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."}
+{"timestamp":"00:04:25.640","source":"Server","level":"WARN","message":"[browser] \"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\""}
+{"timestamp":"00:05:48.214","source":"Browser","level":"WARN","message":"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."}
+{"timestamp":"00:05:48.217","source":"Server","level":"WARN","message":"[browser] \"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\""}
+{"timestamp":"00:07:07.575","source":"Browser","level":"WARN","message":"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."}
+{"timestamp":"00:07:07.576","source":"Server","level":"WARN","message":"[browser] \"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\""}

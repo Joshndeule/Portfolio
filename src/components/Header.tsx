@@ -26,6 +26,18 @@ export default function Header() {
     };
   }, [menuOpen]);
 
+  function handleMobileNavClick(e: React.MouseEvent<HTMLAnchorElement>, href: string) {
+    e.preventDefault();
+    setMenuOpen(false);
+    document.body.style.overflow = "";
+    // Wait for the dropdown's collapse animation to finish before scrolling —
+    // triggering scrollIntoView while it's still animating gets the native
+    // smooth-scroll cancelled almost immediately.
+    window.setTimeout(() => {
+      document.querySelector(href)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 300);
+  }
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
@@ -100,7 +112,7 @@ export default function Header() {
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setMenuOpen(false)}
+                  onClick={(e) => handleMobileNavClick(e, link.href)}
                   className="rounded-lg px-3 py-3 text-base font-medium text-muted transition-colors hover:bg-background-elevated hover:text-cyan"
                 >
                   {link.label}
