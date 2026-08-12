@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(curl -s -o /tmp/claude-1000/-home-infi-teck-Documents-New1-Portifolio-Portfolio/0f6062aa-16f1-47ab-b7af-3f0a41bb1dd5/scratchpad/resp3001.html -w \"HTTP %{http_code}\\\\n\" http://localhost:3001)",
+      "Bash(lsof -i :3000 -sTCP:LISTEN -n -P)",
+      "Bash(ps -o lstart= -p 95466)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(ps -p 95466 -o pid,cmd)"
+    ]
+  }
+}
