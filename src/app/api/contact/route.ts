@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { Resend } from "resend";
 
 type ContactPayload = {
   name?: string;
@@ -8,6 +9,7 @@ type ContactPayload = {
 };
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const RECIPIENT_EMAIL = "joshndeule@gmail.com";
 
 export async function POST(request: Request) {
   let body: ContactPayload;
@@ -34,14 +36,31 @@ export async function POST(request: Request) {
     );
   }
 
-  // NOTE: No email provider is wired up yet. Plug in a service such as
-  // Resend, Nodemailer + SMTP, or EmailJS here to actually deliver messages.
-  console.log("New portfolio contact message:", {
-    name,
-    email,
-    subject,
-    message,
+  if (!process.env.RESEND_API_KEY) {
+    console.error("RESEND_API_KEY is not configured.");
+    return NextResponse.json(
+      { error: "Email delivery is not configured. Please try again later." },
+      { status: 500 }
+    );
+  }
+
+  const resend = new Resend(process.env.RESEND_API_KEY);
+
+  const { error } = await resend.emails.send({
+    from: "Portfolio Contact <onboarding@resend.dev>",
+    to: RECIPIENT_EMAIL,
+    replyTo: email,
+    subject: `Portfolio contact: ${subject}`,
+    text: `From: ${name} <${email}>\n\n${message}`,
   });
+
+  if (error) {
+    console.error("Failed to send contact email:", error);
+    return NextResponse.json(
+      { error: "Failed to send your message. Please try again later." },
+      { status: 502 }
+    );
+  }
 
   return NextResponse.json({ ok: true });
 }

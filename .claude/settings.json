@@ -19,7 +19,8 @@
       "Bash(node mobile-nav-debug.mjs)",
       "Bash(node mobile-nav-debug2.mjs)",
       "Bash(node mobile-nav-debug3.mjs)",
-      "Bash(node mobile-nav-debug4.mjs)"
+      "Bash(node mobile-nav-debug4.mjs)",
+      "Bash(curl -s -X POST http://localhost:3000/api/contact -H 'Content-Type: application/json' -d '{\"name\":\"Test Visitor\",\"email\":\"test-visitor@example.com\",\"subject\":\"Testing contact form\",\"message\":\"This is a test message to confirm email delivery works.\"}' -w '\\\\nHTTP %{http_code}\\\\n')"
     ]
   }
 }
