@@ -6,7 +6,9 @@
       "Bash(lsof -i :3000 -sTCP:LISTEN -n -P)",
       "Bash(ps -o lstart= -p 95466)",
       "Bash(pkill -f \"next dev\")",
-      "Bash(ps -p 95466 -o pid,cmd)"
+      "Bash(ps -p 95466 -o pid,cmd)",
+      "WebSearch",
+      "Bash(npm install *)"
     ]
   }
 }
