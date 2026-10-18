@@ -12,6 +12,7 @@ export const profile = {
   phone: "+265 882 065 532",
   whatsapp: "https://wa.me/265882065532",
   resumeUrl: "/resume.pdf",
+  cvUrl: "/Joshua_Ndeule_CV.pdf",
   bio: "I build scalable full-stack applications with clean, maintainable architecture — and I bring the same rigor to analyzing modern network infrastructure. My work sits at the intersection of software engineering and network & security fundamentals, from REST APIs and relational schemas to Cisco topologies and defensive best practices.",
   about: [
     "I'm an ICT professional based in Lilongwe, Malawi, currently completing a BSc in Information and Communication Technology at Mzuzu University. My path into tech started with curiosity about how networks move data reliably, and grew into a passion for building the software that runs on top of them.",
