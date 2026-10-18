@@ -83,6 +83,15 @@ export default function Header() {
             <Download size={16} />
             Resume
           </a>
+          <a
+            href={profile.cvUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-cyan/40 px-4 py-2 text-sm font-semibold text-cyan transition-colors hover:bg-cyan/10"
+          >
+            <Download size={16} />
+            CV
+          </a>
         </div>
 
         <div className="flex items-center gap-3 md:hidden">
@@ -127,6 +136,16 @@ export default function Header() {
               >
                 <Download size={16} />
                 Resume
+              </a>
+              <a
+                href={profile.cvUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMenuOpen(false)}
+                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full border border-cyan/40 px-4 py-3 text-sm font-semibold text-cyan"
+              >
+                <Download size={16} />
+                CV
               </a>
             </div>
           </motion.div>
