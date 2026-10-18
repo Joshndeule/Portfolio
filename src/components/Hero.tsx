@@ -59,6 +59,15 @@ export default function Hero() {
               <Download size={18} />
               Download Resume
             </a>
+            <a
+              href={profile.cvUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 font-semibold text-foreground transition-colors hover:border-emerald hover:text-emerald"
+            >
+              <Download size={18} />
+              Download CV
+            </a>
           </div>
 
           <div className="mt-12 flex flex-wrap gap-x-10 gap-y-3 font-mono text-sm text-muted">
